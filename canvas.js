@@ -5,10 +5,8 @@ var addRectangle = function(e){
     var Y = e.offsetY;
     var X1 = X - 5;
     var Y1 = Y - 5;
-    var X2 = X + 5;
-    var Y2 = Y + 5;
     canvas.fillStyle = "#0000FF";
-    canvas.fillRect(X1, Y1, X2, Y2);
+    canvas.fillRect(X1, Y1, 10, 10);
 }
 
 var clear_screen = function(e){
