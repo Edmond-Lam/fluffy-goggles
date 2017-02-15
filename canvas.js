@@ -17,15 +17,13 @@ var addCircle = function(e){
     var canvas = c.getContext("2d");
     var X = e.offsetX;
     var Y = e.offsetY;
-    var X1 = X - 5;
-    var Y1 = Y - 5;
-   
-    canvas.lineTo(X1,Y1);
+    canvas.lineTo(X,Y);
     canvas.stroke();
     canvas.beginPath();
     canvas.fillStyle = "#0000FF";
-    canvas.arc(X1, Y1, 10, 0, 2 * Math.PI);
+    canvas.arc(X, Y, 10, 0, 2 * Math.PI);
     canvas.fill();
+    canvas.moveTo(X,Y);
 }
 
 var clear_screen = function(e){
